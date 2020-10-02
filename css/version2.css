@@ -3,9 +3,11 @@
 html{
   box-sizing: border-box;
 }
+
 * {
   box-sizing: inherit;
 }
+
 /* you may add to or change the body rule */
 body {
     font-family: sans-serif;
@@ -13,11 +15,16 @@ body {
     background: #666;
     margin:0;
 }
+
 img {
     max-width: 100%; /* DO NOT delete or change this line */
+    display: block;
+    padding-top: 3rem;
 }
+
 section {
   max-width: 100%;
+  flex: 1 1 50%;
 }
 /* ----- SUGGESTED COLORS -----
     - ARTICLES
@@ -38,13 +45,13 @@ section {
 */
 article{
   display: flex;
-  flex: 1 1 0;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0;
   padding: 2rem;
 }
+
 header{
   background: #666;
   text-transform: uppercase;
@@ -55,11 +62,12 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
+
 header a {
   text-decoration: none;
 }
+
 nav ul{
   display: flex;
   list-style: none;
@@ -70,14 +78,15 @@ nav ul li{
   margin-left: 1rem;
   padding: 0.5rem;
 }
+
 footer{
   background: #666;
   color:#fff;
-
 }
 footer p{
   text-align: center;
 }
+
 #cougar{
   background: #B26219;
 }
@@ -87,18 +96,15 @@ footer p{
 #tiger{
   background: #FFBD82;
 }
+
 .text {
-  background: #fff;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  max-width: 600px;
+ max-width: 600px;
 }
 .photo {
   max-width: 600px;
-}
-h2 {
-  text-align: center;
 }
 
 /* --- link pseudo classes --- */
